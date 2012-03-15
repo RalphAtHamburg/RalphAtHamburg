@@ -1,0 +1,33 @@
+%footer
+
+  %section.box
+    .title= t("footer.twitter")
+    
+    .tweet
+    
+    .follow-me
+      = t("footer.twitter_follow")
+      = link_to " Twitter", "https://twitter.com/#!/ralphAtHamburg/"
+    
+  .box
+    %section
+      .title= t("footer.awf")
+    
+      :markdown
+        #{t("footer.awf_text_1")}
+
+      = link_to "", "http://antswithfriends.net", {:class => "icons-awf"}
+
+      :markdown
+        #{t("footer.awf_text_2")}
+        
+    %section
+      .sub-title= t("footer.ueber")
+  
+      :markdown
+        #{t("footer.ueber_text")}
+          
+  %section.box.last
+    = partial 'termine'        
+      
+  .clr

@@ -1,0 +1,16 @@
+%header
+  %nav
+    %ul
+      %li= link_to t('menu.home'), '/index.html', :class => ('active' if @home)
+      %li= link_to t('menu.ueber'), '/ueber_mich.html', :class => ('active' if @about)
+      %li= link_to t('menu.blog'), data.blog.articles.first.url, :class => ('active' if is_blog_article?)
+      %li= link_to t('menu.kontakt'), '/kontakt.html', :class => ('active' if @kontakt)
+    
+  .clr
+  
+  .headline= t("title.headline")
+    
+  .sub-headline= t("title.sub-headline")
+  
+  .intro= t("title.intro")
+  

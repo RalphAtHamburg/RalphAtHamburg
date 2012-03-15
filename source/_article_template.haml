@@ -1,0 +1,38 @@
+- @bodyclass = "article"
+- @plainLayout = true
+
+.box
+
+  = image_tag "code-2.jpg", {:class => 'fluid'}
+  %ul.inhalt
+    - data.blog.articles.each do |article|
+      %li{:class => ( 'current' if article.title == current_article_title)}
+        %a{:href => article.url}= article.title
+        
+.boxlarge.md
+
+  %article
+    %header
+      = current_article_title 
+      %span
+        %time= current_article_date.strftime('%d.%m.%Y')
+    
+    = yield_content :blog_article
+      
+    #disqus_thread
+      :javascript
+      
+        var disqus_shortname = 'socialwebdevelopment'; 
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      %noscript
+        Please enable JavaScript to view the
+        %a{:href => "http://disqus.com/?ref_noscript"} comments powered by Disqus.
+      %a.dsq-brlink{:href => "http://disqus.com"}
+        blog comments powered by
+        %span.logo-disqus Disqus
+  

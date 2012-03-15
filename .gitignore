@@ -1,0 +1,6 @@
+.DS_Store
+build/
+.sass-cache
+.rvmrc
+bin/
+favicon_base.psd

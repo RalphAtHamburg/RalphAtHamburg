@@ -1,0 +1,97 @@
+# Der Quellcode der Seite kann von [GitHub](http://github.com/RalphAtHamburg) herunter geladen werden.
+---
+de:
+  title: 
+    main: "SocialWeb Development - Ralph Möcklinghoff"
+    kontakt: " / Kontakt" 
+    impressum: " / Impressum"
+    ueber: " / Über mich"
+    headline: "socialweb development"
+    sub-headline: "ralph möcklinghoff"
+    intro: "Beratung &nbsp;Konzeption &nbsp;Entwicklung"
+    
+  menu:
+    home: "Home"
+    ueber: "Über mich"
+    blog: "Blog"
+    kontakt: "Kontakt"
+    
+  home:
+    beratung: "# Webseiten
+
+     Ihre Webseite muss heute sowohl auf dem Desktoprechner, als auch auf mobilen Geräten, wie 
+     dem iPhone oder iPad gut aussehen. Ich erstelle qualitativ hochwertige und zukunftssichere
+     Webseiten, die auf modernen technischen Standards aufbauen. Darüber hinaus berate 
+     ich Ihr Unternehmen dabei, Ihren Internet Auftritt mit zeitgemäßem Layout und modernster 
+     Technik zu gestalten."
+    projekt: "# Webanwendungen
+    
+     Durch agiles Vorgehen und unternehmerischer und lösungsorientierter Arbeitsweise 
+     unterstütze ich Ihr Team bei der Realisierung Ihrer Webanwendung. Ich entwickle dynamische 
+     Websites und -anwendungen mit RubyOnRails und unterstütze meine Kunden bei der Frontend 
+     Entwicklung, auch im mobilen Bereich (Responsive Development, HTML5, CSS3, jQuery, Ajax)."
+    entwicklung:  "# Social Media
+    
+     Social Media ist viel mehr als Twitter, Facebook, Google+ und Co. Eine eigene Facebook Seite 
+     oder die Integration von Sozialen Netzen in Ihre Webseite bieten vielfältige neue 
+     Interaktionsmöglichkeiten. Ich unterstütze Sie bei bei der Konzeption, der Pflege sowie bei 
+     der technischen Umsetzung Ihrer Social Media Aktivitäten."
+
+  about:
+    me: "Über mich"
+    intro: "# Für wen ich arbeite
+    
+     Zu meinen Kunden gehören kleinere und mittlere Unternehmen sowie Startups. 
+     Für größere Unternehmen arbeite ich in der Regel im Agenturauftrag."
+    brands: "**HASPA** - (für Inveos) - **Fashmob** (für Zweitag) - **ImmoPionier** (mit ANTS with FRIENDS) - 
+      **Rexona** (für meemoo) - **Peek&Cloppenburg (Hamburg)**
+      - (für brandmarken) - **Oldenburgische Landesbank** (für brandmarken) - 
+       **Hinz&Kunzt** (mit ANTS with FRIENDS)"
+    description: "Ich bin freiberuflicher Software- und Webentwickler aus Hamburg. Ich berate und 
+      entwickle Lösungen in den Bereichen Social Media, Webanwendungen und Webseiten. Meine Schwerpunkte 
+      liegen auf RubyOnRails, der Frontend Entwicklung (HTML5 CSS3, jQuery, Responsive Development), 
+      sowie Usability."
+    links: "###Social Media
+    
+     Hier finden Sie weitere Profile und Aktivitäten von mir:"
+     
+  kontakt:
+    kontakt: "Kontakt"
+    anfrage: "Anfrage"
+    name: "Ralph Möcklinghoff"
+    strasse: "Immenhof 35"
+    stadt: "22087 Hamburg"
+    telefon: "(+49) 151 22630332"
+    mail-label: "Mail:" 
+    mail: "mail@ralph-moecklinghoff.de"
+    wo: "### Wo ich arbeite
+    
+    Je nach Anforderung arbeite ich beim Kunden vor Ort oder vom eigenen Büro aus. Häufig realisiere 
+    ich meine Projekte in Coworking Spaces, da ich die dortige kreative Atmosphäre sehr schätze. 
+    
+    
+    Mehrere große Projekte habe ich in einem dezentral arbeitenden Team umgesetzt. Die dabei gewonnenen 
+    Erfahrungen mit Cloud Systemen und netzbasierter Kommuniktion gebe ich gerne weiter."
+    
+  form: 
+    name: "Name:"
+    mail: "E-Mail:"
+    anfrage: "Anfrage:"
+    abschicken: "Abschicken"
+    
+  footer:
+    ueber: "Über diese Seite"
+    twitter: "Twitter"
+    twitter_follow: "Folge mir auf"
+    awf: "ANTS with FRIENDS"
+    termine: "Meine Termine"
+    ueber_text: "Diese Seite ist mit [Middleman](http://middlemanapp.com/) in [Haml](http://haml-lang.com/) 
+    und [Sass](http://sass-lang.com/), mit dem responsive Grid System [Susy](http://susy.oddbird.net/) 
+    programmiert. Weitere verwendete Tools: [Compass](http://compass-style.org/), 
+    [Boilerplate](http://html5boilerplate.com/) und [Middleman Bootstrap](https://github.com/nathos/middleman-bootstrap)."  
+    awf_text_1: "Ein freies Netz von Online-Experten unter dem Dach einer Marke. Wir sind ein Team 
+      eingespielter Designer, Konzepter, Texter und Entwickler. [ANTS with FRIENDS](http://antswithfriends.net/) 
+      hat das richtige Team für Ihr Projekt."
+    awf_text_2: "Eines unserer Projekte ist [Desksurfing](http://desksurfing.net) ein Verzeichnis mit 
+      Coworking Plätzen rund um den Globus."
+    

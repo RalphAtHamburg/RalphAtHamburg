@@ -1,0 +1,34 @@
+- @title = t('title.ueber')
+- @bodyclass = "about"
+- @about = true
+- @plainLayout = true
+- @file = File.basename(__FILE__, ".haml")
+
+.box
+  #ralph
+    %h3= t("about.me")
+    = image_tag "ralph-moecklinghoff.jpg", {:alt => 'Ralph Möcklinghoff'}
+    %p= t("about.description")
+
+.box  
+  #social-links
+    :markdown
+      #{t("about.links")}
+
+    = link_to "XING", "http://www.xing.com/profile/Ralph_Moecklinghoff", {:class => "icons-xing"}
+
+    = link_to "LinkedIn", "http://de.linkedin.com/in/ralphmoecklinghoff", {:class => "icons-linkedin"}
+
+    = link_to "Google+", "https://plus.google.com/111711791402435561115", {:class => "icons-google-plus-black"}
+
+    = link_to "Twitter", "https://twitter.com/#!/RalphAtHamburg", {:class => "icons-twitter-2"}
+
+    
+.box.last
+  #clients
+    :markdown
+      #{t("about.intro")}
+      
+      #{t("about.brands")}
+    
+    

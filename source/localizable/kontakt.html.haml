@@ -1,0 +1,46 @@
+- @title = t('title.kontakt')
+- @bodyclass = "kontakt"
+- @kontakt = true
+- @plainLayout = true
+- @file = File.basename(__FILE__, ".haml")
+
+.box
+
+  %h3= t("kontakt.kontakt")
+  %p 
+    %p#phone
+      = t("kontakt.telefon")
+    
+    %p#mail
+      = t("kontakt.mail")
+      
+    %br 
+    
+    = t("kontakt.name")
+    %br  
+    = t("kontakt.strasse")
+    %br
+    = t("kontakt.stadt")
+    
+.box
+  :markdown
+    #{t("kontakt.wo")}  
+
+.box.last
+
+  %h3= t("kontakt.anfrage")
+  %form#contact{:action => 'javascript:;'}
+
+    %label{:for => "name"}= t("form.name")
+    %input{:type => "text", :name => "name"}
+  
+    %label{:for => "email"}= t("form.mail")
+    %input{:type => "text", :name => "email"}
+  
+    %label{:for => "anfrage"}= t("form.anfrage")
+    %textarea{:type => "text", :name => "Anfrage", :rows => "10"}
+
+    %br
+  
+    %button{:type => 'submit'}= t("form.abschicken")
+  
