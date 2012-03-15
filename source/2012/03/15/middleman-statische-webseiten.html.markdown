@@ -50,5 +50,7 @@ Middleman kommt mit vorkonfigurierten leeren Projekten (z.B. HTML5). Auf Github 
 
 Dies sind nur einige Beispiele daf&uuml;r, was man mit Middleman machen kann. Die M&ouml;glichkeiten Middleman bietet sind schon gewaltig. Ich habe Middleman gerade in einem komplexen Projekt eingesetzt und werde es f&uuml;r statische Seiten jetzt immer nehmen. Middleman wir seit 2010 entwickelt, die zur Zeit aktuelle Version ist 2.0. Middleman 3.0 ist aber schon im Beta.
 
+Am Beispielcode dieser Seite zeigt einige Features von Middleman. Zus&auml;tzlich zu den oben beschriebenen Themen nutze ich noch einige Compass Mixins sowie die automatische Generierung von Sprites.
+
 Links:  
-[HAML](http://haml-lang.com/),  [SASS](http://sass-lang.com/),  [Compass](http://compass-style.org/)
+[Quellcode dieser Seite](https://github.com/RalphAtHamburg/RalphAtHamburg), [HAML](http://haml-lang.com/),  [SASS](http://sass-lang.com/),  [Compass](http://compass-style.org/)

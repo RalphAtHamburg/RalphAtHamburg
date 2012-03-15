@@ -88,7 +88,8 @@ de:
     ueber_text: "Diese Seite ist mit [Middleman](http://middlemanapp.com/) in [Haml](http://haml-lang.com/) 
     und [Sass](http://sass-lang.com/), mit dem responsive Grid System [Susy](http://susy.oddbird.net/) 
     programmiert. Weitere verwendete Tools: [Compass](http://compass-style.org/), 
-    [Boilerplate](http://html5boilerplate.com/) und [Middleman Bootstrap](https://github.com/nathos/middleman-bootstrap)."  
+    [Boilerplate](http://html5boilerplate.com/) und [Middleman Bootstrap](https://github.com/nathos/middleman-bootstrap).
+     Der Quellcode der Seite kann von [GitHub](http://github.com/RalphAtHamburg/RalphAtHamburg) herunter geladen werden."  
     awf_text_1: "Ein freies Netz von Online-Experten unter dem Dach einer Marke. Wir sind ein Team 
       eingespielter Designer, Konzepter, Texter und Entwickler. [ANTS with FRIENDS](http://antswithfriends.net/) 
       hat das richtige Team für Ihr Projekt."
