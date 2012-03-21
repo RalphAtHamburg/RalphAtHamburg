@@ -3,9 +3,9 @@ title: Middleman f&uuml;r statische Webseiten
 date: 2012/03/15
 TODO: Umlaute gehen aufgrund eines Bugs nicht UTF-8 and ASCII-8BIT encoding
 ---
-Wenn man es gewohnt ist Webanwendungen mit RubyOnRails zu entwickeln, guckt man ziemlich dumm drein, wenn man auf einmal eine komplexe statische Webseite bauen muss. Die ganzen M&ouml;glichkeiten sein Projekt zu strukturieren, die vielen Helper Methoden und jede Menge weiterer Features fehlt einem pl&ouml;tzlich. Doch zum Gl&uuml;ck gibt es [Middleman](http://middlemanapp.com/).
+Wenn man es gewohnt ist Webanwendungen mit Ruby on Rails zu entwickeln, guckt man ziemlich dumm drein, wenn man auf einmal eine komplexe statische Webseite bauen muss. Die ganzen M&ouml;glichkeiten sein Projekt zu strukturieren, die vielen Helper Methoden und jede Menge weiterer Features fehlt einem pl&ouml;tzlich. Doch zum Gl&uuml;ck gibt es [Middleman](http://middlemanapp.com/).
 
-Middleman ist ein Generator f&uuml;r statische Webseiten. Salopp gesagt handelt es sich um RubyOnRails, bei dem von der MVC Architektur nur die View Schicht &uuml;brig geblieben ist. Modell und Controller fehlen. Zudem unterst&uuml;tzt Middleman eine Vielzahl Templatesprachen (Haml, Sass, Compass, Slim, CoffeeScript, und viele mehr). Die Komprimierung von .js und .css Dateien sowie zur Erzeugung von Sprites  runden den Entwicklungszyklus ab. Hier jetzt einige Bereiche, in denen Middelman bei der Erstellung von statischen Webprojekten helfen kann.
+Middleman ist ein Generator f&uuml;r statische Webseiten. Salopp gesagt handelt es sich um Ruby on Rails, bei dem von der MVC Architektur nur die View Schicht &uuml;brig geblieben ist. Modell und Controller fehlen. Zudem unterst&uuml;tzt Middleman eine Vielzahl Templatesprachen (Haml, Sass, Compass, Slim, CoffeeScript, und viele mehr). Die Komprimierung von .js und .css Dateien sowie zur Erzeugung von Sprites  runden den Entwicklungszyklus ab. Hier jetzt einige Bereiche, in denen Middelman bei der Erstellung von statischen Webprojekten helfen kann.
 
 Elemente, die auf mehreren Seiten vorkommen, wie z.B. Navigation, Fu&szlig;zeile, kann man in eigene Dateien auslagern und als `partial` in die Seiten einf&uuml;gen. 
 
@@ -17,14 +17,14 @@ Elemente, die auf mehreren Seiten vorkommen, wie z.B. Navigation, Fu&szlig;zeile
   
 Auch Stylesheet Dateien lassen sich einfach auf mehre Dateien aufteilen. So verliert man nicht mehr den &Uuml;berblick in 1000 Zeilen langen CSS Dateien. Beim Erstellen der Seite fasst Middelman alles zu einer Datei zusammen und spart somit unn&ouml;tige Requests.
 
-Innerhalb der Seiten hat man vollen Zugriff auf die Sprache Ruby. So kann man leicht &uuml;ber Variablen z.B. den active Zustand von Men&uuml;s steuern. (Codebeispiele in Haml und mit RubyOnRails tag helper) 
+Innerhalb der Seiten hat man vollen Zugriff auf die Sprache Ruby. So kann man leicht &uuml;ber Variablen z.B. den active Zustand von Men&uuml;s steuern. (Codebeispiele in Haml und mit Ruby on Rails tag helper) 
     
     :::haml
     %li= link_to 'Home', 'index.html', :class => ('active' if @home)
     %li= link_to 'About', 'about.html', :class => ('active' if @about)  
     %li= link_to 'Contact', 'contact.html', :class => ('active' if @contact)  
 
-Komplexere Logik l&auml;&szlig;t sich in Helper Methoden auslagern. Weiterhin stehen einem die  RubyOnRails Helper Tags zur Verf&uuml;gung.
+Komplexere Logik l&auml;&szlig;t sich in Helper Methoden auslagern. Weiterhin stehen einem die  Ruby on Rails Helper Tags zur Verf&uuml;gung.
 
 F&uuml;r die Internationalisierung von Seiten kann man die Rails I18n API nutzen. Dabei werden alle Strings in eine yaml Datei ausgelagert. 
 
