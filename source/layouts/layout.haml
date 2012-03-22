@@ -56,12 +56,18 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
       
-    / Google+
+    / Piwik
     :javascript
-      window.___gcfg = {lang: 'de'};
-
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
+      var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.ralph-moecklinghoff.de/" : "http://piwik.ralph-moecklinghoff.de/");
+      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+      } catch( err ) {}
+    %noscript
+      %p
+        %img{:alt => "", :src => "http://piwik.ralph-moecklinghoff.de/piwik.php?idsite=4", :style => "border:0"}/
+    / End Piwik Tracking Code
+    
