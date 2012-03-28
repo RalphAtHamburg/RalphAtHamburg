@@ -18,9 +18,9 @@
       'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)})
       
     - if is_blog_article? 
-      - @title = ' / ' + current_article_title
+      - @title = current_article_title
     
-    %title= t('title.main') + @title 
+    %title= @title + t('title.main')
     
     = stylesheet_link_tag "screen"
     = stylesheet_link_tag "bootstrap.min" if @kontakt

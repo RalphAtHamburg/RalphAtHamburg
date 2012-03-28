@@ -4,9 +4,8 @@
 - @plainLayout = true
 - @file = File.basename(__FILE__, ".haml")
 
-.box
-
-  %h3= t("kontakt.kontakt")
+%section.box
+  %h1= t("kontakt.kontakt")
   %p 
     %p#phone
       = t("kontakt.telefon")
@@ -22,13 +21,14 @@
     %br
     = t("kontakt.stadt")
     
-.box
-  :markdown
-    #{t("kontakt.wo")}  
+%section.box
+  %h1= t("kontakt.wo_header")
+  %p= t("kontakt.wo_1")
+  %p= t("kontakt.wo_2")
+  
+%section.box.last
 
-.box.last
-
-  %h3= t("kontakt.anfrage")
+  %h1= t("kontakt.anfrage")
   %form#contact{:action => 'javascript:;'}
 
     %label{:for => "name"}= t("form.name")

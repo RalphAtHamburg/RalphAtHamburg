@@ -2,10 +2,11 @@
 ---
 de:
   title: 
-    main: "SocialWeb Development - Ralph Möcklinghoff"
-    kontakt: " / Kontakt" 
-    impressum: " / Impressum"
-    ueber: " / Über mich"
+    main: " / SocialWeb Development - Ralph Möcklinghoff"
+    index: "Webanwendungen - Webseiten - Social Media"
+    kontakt: "Kontakt - Anfrage" 
+    impressum: "Impressum"
+    ueber: "Über mich - Profile - Kunden"
     headline: "socialweb development"
     sub-headline: "ralph möcklinghoff"
     intro: "Beratung &nbsp;Konzeption &nbsp;Entwicklung"
@@ -17,29 +18,29 @@ de:
     kontakt: "Kontakt"
     
   home:
-    beratung: "# Webseiten
-
-     Ihre Webseite muss heute sowohl auf dem Desktoprechner, als auch auf mobilen Geräten, wie 
+    beratung_header: "Webseiten"
+    beratung: "Ihre Webseite muss heute sowohl auf dem Desktoprechner, als auch auf mobilen Geräten, wie 
      dem iPhone oder iPad gut aussehen. Ich entwickele qualitativ hochwertige und zukunftssichere
      Webseiten, die auf modernen technischen Standards aufbauen. Darüber hinaus berate 
      ich Ihr Unternehmen dabei, Ihren Internet Auftritt mit zeitgemäßem Layout und modernster 
      Technik zu gestalten."
-    projekt: "# Webanwendungen
     
-     Durch agiles Vorgehen und unternehmerischer und lösungsorientierter Arbeitsweise 
+    projekt_header: "Webanwendungen"
+    projekt: "Durch agiles Vorgehen und unternehmerischer und lösungsorientierter Arbeitsweise 
      unterstütze ich Ihr Team bei der Realisierung Ihrer Webanwendung. Ich entwickle dynamische 
      Websites und -anwendungen mit Ruby on Rails und unterstütze meine Kunden bei der Frontend 
      Entwicklung, auch im mobilen Bereich (Responsive Development, HTML5, CSS3, jQuery, Ajax)."
-    entwicklung:  "# Social Media
     
-     Social Media ist viel mehr als Twitter, Facebook, Google+ und Co. Eine eigene Facebook Seite 
+    
+    entwicklung_header: "Social Media"
+    entwicklung:  "Social Media ist viel mehr als Twitter, Facebook, Google+ und Co. Eine eigene Facebook Seite 
      oder die Integration von Sozialen Netzen in Ihre Webseite bieten vielfältige neue 
      Interaktionsmöglichkeiten. Ich unterstütze Sie bei bei der Konzeption, der Pflege sowie bei 
      der technischen Umsetzung Ihrer Social Media Aktivitäten."
 
   about:
-    me: "Über mich"
-    intro: "# Für wen ich arbeite
+    
+    intro: "# Kunden
     
      Zu meinen Kunden gehören kleinere und mittlere Unternehmen sowie Startups. 
      Für größere Unternehmen arbeite ich in der Regel im Agenturauftrag."
@@ -47,13 +48,15 @@ de:
       **Rexona** (für meemoo) - **Peek&Cloppenburg (Hamburg)**
       - (für brandmarken) - **Oldenburgische Landesbank** (für brandmarken) - 
        **Hinz&Kunzt** (mit ANTS with FRIENDS)"
-    description: "Ich bin freiberuflicher Software- und Webentwickler aus Hamburg. Ich berate und 
-      entwickle Lösungen in den Bereichen Social Media, Webanwendungen und Webseiten. Meine Schwerpunkte 
-      liegen auf Ruby on Rails, der Frontend Entwicklung (HTML5 CSS3, jQuery, Responsive Development), 
-      sowie Usability."
-    links: "###Social Media
     
-     Hier finden Sie weitere Profile und Aktivitäten von mir:"
+    ueber_mich_header: "Über mich"
+    ueber_mich: "Ich bin freiberuflicher Software- und Webentwickler aus Hamburg. Ich berate und
+      entwickle Lösungen in den Bereichen Social Media, Webanwendungen und Webseiten. Meine Schwerpunkte
+      liegen auf Ruby on Rails, der Frontend Entwicklung (HTML5 CSS3, jQuery, Responsive Development),
+      sowie Usability."
+     
+    links_header: "Profile"
+    links: "Hier finden Sie weitere Profile und Aktivitäten von mir:"
      
   kontakt:
     kontakt: "Kontakt"
@@ -64,13 +67,10 @@ de:
     telefon: "(+49) 151 22630332"
     mail-label: "Mail:" 
     mail: "mail@ralph-moecklinghoff.de"
-    wo: "### Wo ich arbeite
-    
-    Je nach Anforderung arbeite ich beim Kunden vor Ort oder vom eigenen Büro aus. Häufig realisiere 
-    ich meine Projekte in Coworking Spaces, da ich die dortige kreative Atmosphäre sehr schätze. 
-    
-    
-    Mehrere große Projekte habe ich in einem dezentral arbeitenden Team umgesetzt. Die dabei gewonnenen 
+    wo_header: "Wo ich arbeite"
+    wo_1: "Je nach Anforderung arbeite ich beim Kunden vor Ort oder vom eigenen Büro aus. Häufig realisiere 
+    ich meine Projekte in Coworking Spaces, da ich die dortige kreative Atmosphäre sehr schätze."
+    wo_2: "Mehrere große Projekte habe ich in einem dezentral arbeitenden Team umgesetzt. Die dabei gewonnenen 
     Erfahrungen mit Cloud Systemen und netzbasierter Kommuniktion gebe ich gerne weiter."
     
   form: 

@@ -1,21 +1,23 @@
-- @title = ''
+- @title = t('title.index')
 - @bodyclass = "home"
 - @home = true
 - @file = File.basename(__FILE__, ".haml")
 
 %article.box
   = image_tag "code.jpg",{:class => "fluid", :alt => "code"}
-  :markdown
-    #{t("home.projekt")}
-  
-    
+  %header
+    %h1= t("home.projekt_header")
+  %p= t("home.projekt")
+
 %article.box
   = image_tag "html.jpg",{:class => "fluid", :alt => "html"}
-  :markdown
-    #{t("home.beratung")}
-  
+  %header
+    %h1= t("home.beratung_header")
+  %p= t("home.beratung")
+    
+
 %article.box.last
   = image_tag "diagram.jpg",{:class => "fluid", :alt => "diagram"}
-  :markdown
-    #{t("home.entwicklung")}
-    
+  %header
+    %h1= t("home.entwicklung_header")
+  %p= t("home.entwicklung")    
