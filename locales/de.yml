@@ -2,15 +2,22 @@
 ---
 de:
   title: 
-    main: " / Ralph Möcklinghoff - SocialWeb Development"
-    index: "Webanwendungen - Webseiten - Social Media"
-    kontakt: "Kontakt - Anfrage" 
-    impressum: "Impressum"
-    ueber: "Über mich - Profile - Kunden"
+    home: "Webanwendungen - Webseiten - Social Media / Ralph Möcklinghoff - Hamburg"
+    kontakt: "Kontakt - Anfrage / Ralph Möcklinghoff - Hamburg" 
+    impressum: "Impressum / Ralph Möcklinghoff - Hamburg"
+    ueber_mich: "Über mich - Profile - Kunden / Ralph Möcklinghoff - Hamburg"
+    blog: " / Ralph Möcklinghoff - Socialweb Development"
     headline: "socialweb development"
     sub-headline: "ralph möcklinghoff"
     intro: "Beratung &nbsp;Konzeption &nbsp;Entwicklung"
-    
+  
+  description:
+    home: "Mein Name ist Ralph Möcklinghoff. Ich baue Responsive Webseiten in HTML5 / CSS3 und entwickle Webanwendungen mit Ruby on Rails"
+    kontakt: "Ich bin freiberuflicher Software- und Webentwickler aus Hamburg. Ich würde mich freuen, wenn Sie mit mir Kontakt aufnehmen."
+    ueber_mich: "Ich bin freiberuflicher Software- und Webentwickler aus Hamburg. Ich berate und entwickle Lösungen in den Bereichen Social Media, Webanwendungen und Webseiten."
+    blog: "Mein Name ist Ralph Möcklinghoff. In diesem Blog schreibe ich über aktuelle Trends in der Webentwicklung."
+    impressum: "Impressum der Webseite von Ralph Möcklinghoff."
+        
   menu:
     home: "Home"
     ueber: "Über mich"
@@ -39,7 +46,6 @@ de:
      der technischen Umsetzung Ihrer Social Media Aktivitäten."
 
   about:
-    
     intro: "# Kunden
     
      Zu meinen Kunden gehören kleinere und mittlere Unternehmen sowie Startups. 
@@ -95,4 +101,3 @@ de:
       hat das richtige Team für Ihr Projekt."
     awf_text_2: "Eines unserer Projekte ist [Desksurfing](http://desksurfing.net) ein Verzeichnis mit 
       Coworking Plätzen rund um den Globus."
-    
