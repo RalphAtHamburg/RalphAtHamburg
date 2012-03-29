@@ -33,15 +33,16 @@
   %form#contact{:action => 'javascript:;'}
 
     %label{:for => "name"}= t("form.name")
-    %input{:type => "text", :name => "name"}
+    %input{:type => "text", :name => "name", :id => "_name"}
   
-    %label{:for => "email"}= t("form.mail")
-    %input{:type => "text", :name => "email"}
+    %label{:for => "mail"}= t("form.mail")
+    %input{:type => "text", :name => "mail", :id => "_mail"}
   
     %label{:for => "anfrage"}= t("form.anfrage")
-    %textarea{:type => "text", :name => "Anfrage", :rows => "10"}
+    %textarea{:type => "text", :name => "anfrage", :id => "_anfrage",  :rows => "10"}
 
     %br
   
     %button{:type => 'submit'}= t("form.abschicken")
-  
+    
+    %p#note
