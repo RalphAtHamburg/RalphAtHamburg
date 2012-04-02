@@ -28,6 +28,7 @@ require 'coffee-filter'
 activate :blog
 
 set :blog_layout_engine, "haml"
+set :blog_permalink, "blog/:year/:title.html"
 
 page "/feed.xml", :layout => false
 
