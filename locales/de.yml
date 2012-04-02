@@ -88,7 +88,7 @@ de:
   footer:
     ueber: "Über diese Seite"
     twitter: "Twitter"
-    twitter_follow: "Folge mir auf"
+    follow: "Folge mir auf"
     awf: "ANTS with FRIENDS"
     termine: "Meine Termine"
     ueber_text: "Diese Seite ist mit [Middleman](http://middlemanapp.com/) in [Haml](http://haml-lang.com/) 
