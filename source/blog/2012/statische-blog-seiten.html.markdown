@@ -39,7 +39,7 @@ Man kann auch einfach `middleman article 'Statische Blog Seiten'` eintippen, Mid
 
 Es ist noch nicht einmal n&ouml;tig, die Beitr&auml;ge in HTML zu verfassen. Man kann alles in **Markdown** schreiben. Die Formatierungsm&ouml;glichkeiten reichen f&uuml;r ein Blog vollopmmen aus. Middleman unterst&uuml;tzt dabei  verschiedene Markdown Engines.
 
-Jetzt ist also der richtige Zeitpunkt, sich einen dieser ultraschicken, minimalistischen, stylischen Markdown Editoren wie [iaWriter](http://www.iawriter.com/) oder [ByWord](http://bywordapp.com/) zuzulegen. Dank iCloud uUnterst&uuml;tzung kann man so von &uuml;berall mit iPhone oder iPad an seinen Beitr&auml;gen arbeiten. Ein simpler Texteditor tut es nat&uuml;rlich such.
+Jetzt ist also der richtige Zeitpunkt, sich einen dieser ultraschicken, minimalistischen, stylischen Markdown Editoren wie [iaWriter](http://www.iawriter.com/) oder [Byword](http://bywordapp.com/) zuzulegen. Dank iCloud Unterst&uuml;tzung kann man so von &uuml;berall mit iPhone oder iPad an seinen Beitr&auml;gen arbeiten. Ein simpler Texteditor tut es nat&uuml;rlich such.
 
 Ein Artikel in Markdown sieht dann so aus:
 
