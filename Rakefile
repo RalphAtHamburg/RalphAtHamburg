@@ -1,3 +1,8 @@
+#
+# Rakefile from https://gist.github.com/1902178#file_rakefile
+# http://scottwb.com/blog/2012/02/24/middleman-deployment-rakefile/
+#
+
 SSH_USER = 'user'
 SSH_HOST = 'www.example.com'
 SSH_DIR  = '/var/www/html/www.example.com'
