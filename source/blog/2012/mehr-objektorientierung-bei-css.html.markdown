@@ -52,11 +52,11 @@ Der Beispielcode beschreibt einmal eine Produkt Detail Seite mit einem Produkt u
     <div id="products-page">
         <h1>Kaufe coole Klamotten Online</h1>
 
-          <h2>Jeans 501</h2>
-          <p>.....</p>
+        <h2>Jeans 501</h2>
+        <p>.....</p>
 
-          <h2>Hemd Hawaii</h2>
-          <p>.....</p>
+        <h2>Hemd Hawaii</h2>
+        <p>.....</p>
     </div>
 
     <!-- product detail page -->
