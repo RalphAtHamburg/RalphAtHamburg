@@ -16,19 +16,16 @@ Zuerst erstellt man ein Template für die Blog Seite(n) und baut es in die Websi
     blog_month_template
     blog_day_template
 
-Dabei stehen einem eine Reihe von Helper Methoden zur Verfügung. 
+Dabei stehen einem eine Reihe von Methoden zur Verfügung. 
 
     :::ruby
     is_blog_article?
-    current_article_date
-    current_article_title
-    current_article_metadata
-    current_article_tags
-    blog_tags
-    current_tag_data
-    current_tag_articles
-    current_tag_title
-
+    current_article.date
+    current_article.title
+    current_article.metadata
+    paginate
+    tag_path(tag)
+    
 Steht die Struktur erst einmal, kann man anfangen, seine Beiträge zu schreiben.
 
 Die Beiträge werden im Middleman Projekt in einer festen Ordnerstruktur abgelegt, z.B.:
