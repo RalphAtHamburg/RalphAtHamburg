@@ -1,5 +1,5 @@
-- @title = t('title.home')
-- @description = t('description.home')
+- @title = I18n.t('title.home')
+- @description = I18n.t('description.home')
 - @bodyclass = "home"
 - @home = true
 - @file = File.basename(__FILE__, ".haml")
@@ -7,18 +7,18 @@
 %article.box
   = image_tag "code.jpg",{:class => "fluid", :alt => "code"}
   %header
-    %h1= t("home.projekt_header")
-  %p= t("home.projekt")
+    %h1= I18n.t("home.projekt_header")
+  %p= I18n.t("home.projekt")
 
 %article.box
   = image_tag "html.jpg",{:class => "fluid", :alt => "html"}
   %header
-    %h1= t("home.beratung_header")
-  %p= t("home.beratung")
+    %h1= I18n.t("home.beratung_header")
+  %p= I18n.t("home.beratung")
     
 
 %article.box.last
   = image_tag "diagram.jpg",{:class => "fluid", :alt => "diagram"}
   %header
-    %h1= t("home.entwicklung_header")
-  %p= t("home.entwicklung")    
+    %h1= I18n.t("home.entwicklung_header")
+  %p= I18n.t("home.entwicklung")    

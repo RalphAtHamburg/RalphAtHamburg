@@ -1,5 +1,5 @@
-- @description = t('description.blog') if is_blog_article?
-- @title = current_article_title  + t('title.blog')  if is_blog_article? 
+- @description = I18n.t('description.blog') if is_blog_article?
+- @title = current_article.title  + I18n.t('title.blog')  if is_blog_article? 
 
 !!! 5
 /[if lt IE 7 ] <html class="no-js ie6" lang="en">
@@ -40,7 +40,7 @@
       
         - if is_blog_article?
           - content_for :blog_article, yield
-          = partial settings.blog_article_template
+          = partial 'localizable/article_template'
         - else
           = yield
       

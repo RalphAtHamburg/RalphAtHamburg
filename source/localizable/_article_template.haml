@@ -5,17 +5,17 @@
 
   = image_tag "code-2.jpg", {:class => 'fluid'}
   %ul.inhalt
-    - data.blog.articles.each do |article|
-      %li{:class => ( 'current' if article.title == current_article_title)}
+    - blog.articles.each do |article|
+      %li{:class => ( 'current' if article.title == current_article.title)}
         %a{:href => article.url}= article.title
         
 .boxlarge.md
 
   %article
     %header
-      = current_article_title 
+      = current_article.title 
       %span
-        %time= current_article_date.strftime('%d.%m.%Y')
+        %time= current_article.date.strftime('%d.%m.%Y')
     
     = yield_content :blog_article
       

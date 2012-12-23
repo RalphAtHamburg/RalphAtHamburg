@@ -15,18 +15,16 @@ $side-gutter-width  : 2em
   +susy-grid-background
   
 header, #main-content, footer
-  // mixin +full for a full grid width row - it's a shortcut!
-  +full
     
 .box
-  +columns(3,9)
+  +span-columns(3,9)
 
 .boxlarge
-  +columns(6,9)
-  +omega(9)
+  +span-columns(6,9)
+  +omega
   
 .last
-  +omega(9)
+  +omega
   
 #imprint
-  +columns(5, 9)
+  +span-columns(5, 9)

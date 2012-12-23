@@ -1,34 +1,34 @@
 %footer
 
   %section.box
-    .title= t("footer.twitter")
+    .title= I18n.t("footer.twitter")
     
     .tweet
     
     .follow-me
-      = t("footer.follow")
+      = I18n.t("footer.follow")
       = link_to " Twitter", "https://twitter.com/#!/ralphAtHamburg/"
       %br
       
-      = t("footer.follow")
+      = I18n.t("footer.follow")
       = link_to " Google+", "https://plus.google.com/111711791402435561115?prsrc=3", {:rel => "author"}
   .box
     %section
-      .title= t("footer.awf")
+      .title= I18n.t("footer.awf")
     
       :markdown
-        #{t("footer.awf_text_1")}
+        #{I18n.t("footer.awf_text_1")}
 
       = link_to "", "http://antswithfriends.net", {:class => "icons-awf"}
 
       :markdown
-        #{t("footer.awf_text_2")}
+        #{I18n.t("footer.awf_text_2")}
         
     %section
-      .sub-title= t("footer.ueber")
+      .sub-title= I18n.t("footer.ueber")
   
       :markdown
-        #{t("footer.ueber_text")}
+        #{I18n.t("footer.ueber_text")}
           
   %section.box.last
     = partial 'termine'        

@@ -1,48 +1,48 @@
-- @title = t('title.kontakt')
-- @description = t('description.kontakt')
+- @title = I18n.t('title.kontakt')
+- @description = I18n.t('description.kontakt')
 - @bodyclass = "kontakt"
 - @kontakt = true
 - @plainLayout = true
 - @file = File.basename(__FILE__, ".haml")
 
 %section.box
-  %h1= t("kontakt.kontakt")
+  %h1= I18n.t("kontakt.kontakt")
   %p 
     %p#phone
-      = t("kontakt.telefon")
+      = I18n.t("kontakt.telefon")
     
     %p#mail
-      = t("kontakt.mail")
+      = I18n.t("kontakt.mail")
       
     %br 
     
-    = t("kontakt.name")
+    = I18n.t("kontakt.name")
     %br  
-    = t("kontakt.strasse")
+    = I18n.t("kontakt.strasse")
     %br
-    = t("kontakt.stadt")
+    = I18n.t("kontakt.stadt")
     
 %section.box
-  %h1= t("kontakt.wo_header")
-  %p= t("kontakt.wo_1")
-  %p= t("kontakt.wo_2")
+  %h1= I18n.t("kontakt.wo_header")
+  %p= I18n.t("kontakt.wo_1")
+  %p= I18n.t("kontakt.wo_2")
   
 %section.box.last
 
-  %h1= t("kontakt.anfrage")
+  %h1= I18n.t("kontakt.anfrage")
   %form#contact{:action => 'javascript:;'}
 
-    %label{:for => "name"}= t("form.name")
+    %label{:for => "name"}= I18n.t("form.name")
     %input{:type => "text", :name => "name", :id => "_name"}
   
-    %label{:for => "mail"}= t("form.mail")
+    %label{:for => "mail"}= I18n.t("form.mail")
     %input{:type => "text", :name => "mail", :id => "_mail"}
   
-    %label{:for => "anfrage"}= t("form.anfrage")
+    %label{:for => "anfrage"}= I18n.t("form.anfrage")
     %textarea{:type => "text", :name => "anfrage", :id => "_anfrage",  :rows => "10"}
 
     %br
   
-    %button{:type => 'submit'}= t("form.abschicken")
+    %button{:type => 'submit'}= I18n.t("form.abschicken")
     
     %p#note

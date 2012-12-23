@@ -1,5 +1,5 @@
-- @title = t('title.ueber_mich')
-- @description = t('description.ueber_mich')
+- @title = I18n.t('title.ueber_mich')
+- @description = I18n.t('description.ueber_mich')
 - @bodyclass = "about"
 - @about = true
 - @plainLayout = true
@@ -7,16 +7,16 @@
 
 %section.box#ralph
   %header
-    %h1= t("about.ueber_mich_header")
+    %h1= I18n.t("about.ueber_mich_header")
     
   = image_tag "ralph-moecklinghoff.jpg", {:alt => 'Ralph Möcklinghoff'}
-  %p= t("about.ueber_mich")
+  %p= I18n.t("about.ueber_mich")
 
 %section.box#social-links
   %header
-    %h1= t("about.links_header")
+    %h1= I18n.t("about.links_header")
     
-  %p= t("about.links")
+  %p= I18n.t("about.links")
 
   %p
     = link_to "XING", "http://www.xing.com/profile/Ralph_Moecklinghoff", {:class => "icons-xing"}
@@ -28,8 +28,8 @@
       
 %section.box.last#clients
   :markdown
-    #{t("about.intro")}
+    #{I18n.t("about.intro")}
     
-    #{t("about.brands")}
+    #{I18n.t("about.brands")}
     
     
