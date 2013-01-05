@@ -53,11 +53,11 @@ Ein Artikel in Markdown sieht dann so aus:
 	* one
     * two
 
-		def foo
-			bar
-		end
+      def foo
+        bar
+      end
 
-	lorem ipsum .....
+    lorem ipsum .....
 
 Mit dem Befehl `middleman build` wird anschließend die statische Website gebaut, die man dann nur noch auf den Server hochladen muss. Noch einfacher geht das mit dem [rakefile](https://gist.github.com/1902178#file_rakefile) von [Scott W.Bradley](http://scottwb.com/blog/2012/02/24/middleman-deployment-rakefile/). Damit ist nur noch der Befehl `rake deploy` einzutippen.
 

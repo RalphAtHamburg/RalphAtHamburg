@@ -25,16 +25,13 @@ Ziel ist es, den CSS Code konsistenter, weniger redundant und wiederverwendbarer
 Interessant wird es im Kapitel über Module. Module sind CSS Klassen, die an allen Stellen im HTML angewendet werden 
 können. Typische Module sind die Navigationsleiste, Listen, Widgets usw.
 
-Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. 
-Each Module should be designed to exist as a standalone component. 
-In doing so, the page will be more flexible. If done right, Modules can easily be moved
-to different parts of the layout without breaking.
+> Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
 
 Was ist zu beachten, wenn man Module entwickelt, die den o.g. Anforderungen entsprechen? Hier ist ein Vortrag von Andy Hume interessant [Audio](http://audio.sxsw.com/2012/podcasts/10-ACC-CSS_for_Grownups.mp3), [Slides](https://speakerdeck.com/u/andyhume/p/css-for-grown-ups-maturing-best-practises). Andy Hume stellt u.a. ein altes Paradigma in Frage, demzufolge man keine beschreibenden Klassennamen verwenden soll. Er sieht das HTML eher als API, an die das CSS gebunden wird. Dabei fackelt er nicht lange herum, sondern stellt gleich zu Anfang die (provokante)Frage, was denn an dieser Klasse so schlimm sein soll.
 
     :::css
     .green {
-        color: green;
+      color: green;
     }
 
 Sieht man das HTML als Art API für die Gestaltung per CSS, dann ist das eine klare eindeutige Schnittstelle. Bisher ist es eher so, dass die Gestaltung per Type Selector an HTML Elemente angedockt wird:
@@ -49,21 +46,21 @@ Der Beispielcode beschreibt einmal eine Produkt Detail Seite mit einem Produkt u
     :::html
     <!-- products list page -->
     <div id="products-page">
-        <h1>Kaufe coole Klamotten Online</h1>
-
-        <h2>Jeans 501</h2>
-        <p>.....</p>
-
-        <h2>Hemd Hawaii</h2>
-        <p>.....</p>
+      <h1>Kaufe coole Klamotten Online</h1>
+    
+    <h2>Jeans 501</h2>
+      <p>.....</p>
+    
+      <h2>Hemd Hawaii</h2>
+      <p>.....</p>
     </div>
 
     <!-- product detail page -->
     <div id="product-page">
-        <h1>Jeans 501</h1>
-        <h2>Die coolste Hose.</h2>
-        <p>.....</p>
-        <img src=".." alt="Jeans 501" />
+      <h1>Jeans 501</h1>
+      <h2>Die coolste Hose.</h2>
+      <p>.....</p>
+      <img src=".." alt="Jeans 501" />
     </div>
 
 CSS
@@ -71,8 +68,8 @@ CSS
     :::css
     #product-page h1
     #products-page h2 {
-        font-size: 24px;
-        color: #223322;
+      font-size: 24px;
+      color: #223322;
     }
 
 Die Gestaltung ist mit dem HTML Markup (h1 und h2) verknüpft. h1 und h2 haben aber, je nach dem innerhalb welchem Kontext sie benutzt werden, eine unterschiedliche Semantik. Auf der Produnkt Listing Seite ist die Semantik des h1 Elements "Claim", auf der Produkt Detail Seite "Product Headline". Aus CSS Sicht ist die Semantik nicht erkennbar.
@@ -84,29 +81,29 @@ Die vorgeschlagene Lösung besteht jetzt darin, die Gestaltung nicht an HTML Ele
     :::html
     <!-- products list page -->
     <div id="content">
-        <h1>Kaufe coole Klamotten Online</h1>
+      <h1>Kaufe coole Klamotten Online</h1>
 
-        <h2 class="product-headline">Jeans 501</h2>
-        <p>.....</p>
+      <h2 class="product-headline">Jeans 501</h2>
+      <p>.....</p>
 
-        <h2 class="product-headline">Hemd Hawaii</h2>
-        <p>.....</p>
+      <h2 class="product-headline">Hemd Hawaii</h2>
+      <p>.....</p>
     </div>
 
     <!-- product detail page -->
     <div id="content">
-        <h1 class="product-headline">Jeans 501</h1>
-        <h2>Die coolste Hose.</h2>
-        <p>.....</p>
-        <img src="" />
+      <h1 class="product-headline">Jeans 501</h1>
+      <h2>Die coolste Hose.</h2>
+      <p>.....</p>
+      <img src="" />
     </div>
 
 .
 
     :::css
     .product-headline {
-        font-size: 24px;
-        color: #223322;
+      font-size: 24px;
+      color: #223322;
     }
 
 Im Sinne von HTML als API haben wir jetzt eine klare Schnittstelle realisiert über Klassen. Im CSS wird jetzt 
@@ -119,12 +116,12 @@ sollte die Schrift z.B. größer sein als auf der Listing Seite.
 
     :::css
     .product-headline {
-        font-size: 24px;
-        color: #223322;
+      font-size: 24px;
+      color: #223322;
     }
 
     #product-page .product-headline {
-        font-size: 36px;
+      font-size: 36px;
     }
 
 Wieder eine Best practice, die es zu überprüfen gilt. Nach einem Jahr, in dem vielleicht auch noch mehrere Entwickler an den Seiten gearbeitet haben, sieht die CSS Datei wahrscheinlich so aus:
@@ -135,7 +132,7 @@ Wieder eine Best practice, die es zu überprüfen gilt. Nach einem Jahr, in dem 
     #product-of-the-month .product-headline,
     #mixed-page .single-product .product-headline,
     #featured-page .product-headline {
-        font-size: 36px;
+      font-size: 36px;
     }
 
 Alles andere als übersichtlich.
@@ -157,12 +154,12 @@ Was ist also das Spezielle an dieser Headline? Da das Produkt an einer hervorgeh
 
     :::css
     .product-headline {
-        font-size: 24px;
-        color: #223322;
+      font-size: 24px;
+      color: #223322;
     }
 
     .product-headline--big {
-        font-size: 36px;
+      font-size: 36px;
     }
 
 .
@@ -170,10 +167,10 @@ Was ist also das Spezielle an dieser Headline? Da das Produkt an einer hervorgeh
     :::html
     <!-- product detail page -->
     <div id="product-page">
-        <h1 class="product-headline product-headline--big">Jeans 501</h1>
-        <h2>Die cooleste Hose</h2>
-        <p>.....</p>
-        <img src=".." alt="Jeans 501" />
+      <h1 class="product-headline product-headline--big">Jeans 501</h1>
+      <h2>Die cooleste Hose</h2>
+      <p>.....</p>
+      <img src=".." alt="Jeans 501" />
     </div>
 
 Natülich ist die Beschreibung hier auch semantisch und lautet nicht etwa: product-headline--36px. CSS ist keine OO Sprache. Man muss sich also mit Konstrukten wie `class="product-headline product-headline--big` helfen. Namenskonventionen können die Arbeit weiter vereinfachen. Preprozessoren wie SASS und LESS haben eigene Funktionalitäten, um Subklassen zu definieren (@extend).
