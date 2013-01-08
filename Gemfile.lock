@@ -143,5 +143,6 @@ DEPENDENCIES
   middleman-blog
   middleman-smusher
   pygments.rb
+  rack (= 1.4.1)
   rack-codehighlighter!
   susy
