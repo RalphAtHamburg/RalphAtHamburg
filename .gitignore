@@ -4,3 +4,4 @@ build/
 .rvmrc
 bin/
 favicon_base.psd
+.rbenv-version
